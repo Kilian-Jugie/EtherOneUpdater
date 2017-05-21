@@ -1,0 +1,310 @@
+\hypertarget{classDataManager}{}\section{Data\+Manager}
+\label{classDataManager}\index{Data\+Manager@{Data\+Manager}}
+
+
+Manager pour donnés J\+S\+ON V1.\+0.  
+
+
+
+
+{\ttfamily \#include \char`\"{}datamanager.\+h\char`\"{}}
+
+
+
+Est dérivée de Q\+Object.
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classDataManager_a45a34311e5a2d6d192293eaeaff22a6e}{add\+To\+Array} (const Q\+String array, const Q\+String value) const
+\begin{DoxyCompactList}\small\item\em Ajoute la valeur value (String) a l\textquotesingle{}array array. \end{DoxyCompactList}\item 
+bool \hyperlink{classDataManager_ae853a46801f77c83528be95b19cf271b}{add\+To\+Array} (const Q\+String array, const int value) const
+\begin{DoxyCompactList}\small\item\em Ajoute la valeur value (int) a l\textquotesingle{}array array. \end{DoxyCompactList}\item 
+bool \hyperlink{classDataManager_a70a1a322edd474e7df74ce2f06d8722d}{get\+Bool\+Data} (const Q\+String name) const
+\begin{DoxyCompactList}\small\item\em Return la valeur d\textquotesingle{}une variable (bool) \end{DoxyCompactList}\item 
+void \hyperlink{classDataManager_a0539555de38fb7fbfa170007a0cb3ae3}{Get\+Data\+Document} (Document $\ast$doc) const
+\begin{DoxyCompactList}\small\item\em Remplit un pointeur depuis un fichier (non-\/\+R\+AM) \end{DoxyCompactList}\item 
+int \hyperlink{classDataManager_af0c4f956eace0565b8909cdd21933da1}{get\+Int\+Data} (const Q\+String name) const
+\begin{DoxyCompactList}\small\item\em Return la valeur d\textquotesingle{}une variable (int) \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classDataManager_a22680422b7ea8ff8fd9c7a24a47193c3}{get\+Std\+String\+Data} (const std\+::string name) const
+\begin{DoxyCompactList}\small\item\em Return la valeur d\textquotesingle{}une variable (String) (S\+TL) \end{DoxyCompactList}\item 
+Q\+String \hyperlink{classDataManager_adcb9caff55a85e95a70b07a157ff10ce}{get\+String\+Data} (const Q\+String name) const
+\begin{DoxyCompactList}\small\item\em Return la valeur d\textquotesingle{}une variable (String) (Qt) \end{DoxyCompactList}\item 
+bool \hyperlink{classDataManager_a81de7a40c5c5184c57de175d38d20ec6}{rem\+To\+Array} (const Q\+String array, const Q\+String elem) const
+\begin{DoxyCompactList}\small\item\em Enleve un string d\textquotesingle{}une array. \end{DoxyCompactList}\item 
+bool \hyperlink{classDataManager_ae8c8beec1b0da3b56c08b988e7c0cf09}{rem\+To\+Array} (const Q\+String array, const int elem) const
+\begin{DoxyCompactList}\small\item\em Enleve un int d\textquotesingle{}une array. \end{DoxyCompactList}\item 
+void \hyperlink{classDataManager_a220fa849736606675492bf57f41241a1}{Save\+Document} (const Document $\ast$doc) const
+\begin{DoxyCompactList}\small\item\em Sauvegarde des donnés dans un fichier (non-\/\+R\+AM) \end{DoxyCompactList}\item 
+bool \hyperlink{classDataManager_af1b5561cf95f40969d9cb44b0d01a835}{write\+Data} (const Q\+String arg, const Q\+String value) const
+\begin{DoxyCompactList}\small\item\em Change la valeur de arg pour value (String) \end{DoxyCompactList}\item 
+bool \hyperlink{classDataManager_a96ac6856ddebd921ac034c3103f1d755}{write\+Data} (const Q\+String arg, const int value) const
+\begin{DoxyCompactList}\small\item\em Change la valeur de arg pour value (int) \end{DoxyCompactList}\item 
+bool \hyperlink{classDataManager_ab2cc4cd3515c1947b59a275f8851c2a5}{write\+Data} (const Q\+String arg, const bool value) const
+\begin{DoxyCompactList}\small\item\em Change la valeur de arg pour value (bool) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataManager_ac872ade481f99cf93bbf9ed4d9dfac3f}\label{classDataManager_ac872ade481f99cf93bbf9ed4d9dfac3f}} 
+void \hyperlink{classDataManager_ac872ade481f99cf93bbf9ed4d9dfac3f}{Write\+Default} () const
+\begin{DoxyCompactList}\small\item\em Créé un fichier avec la data par défaut (syntax to normalize) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Manager pour donnés J\+S\+ON V1.\+0. 
+
+Permet de créer, modifier des fichiers data en utilisant du json. Cette class n\textquotesingle{}est utilisble qu\textquotesingle{}avec Qt, une version S\+TL sera probablement faite toujours avec le parser actuel, une version templated peut aussi être envisagée avec un allocator custom. Cette class reste en développement avec par exemple rem\+To\+Array qui n\textquotesingle{}est actuellement pas disponible. 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classDataManager_a45a34311e5a2d6d192293eaeaff22a6e}\label{classDataManager_a45a34311e5a2d6d192293eaeaff22a6e}} 
+\index{Data\+Manager@{Data\+Manager}!add\+To\+Array@{add\+To\+Array}}
+\index{add\+To\+Array@{add\+To\+Array}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{add\+To\+Array()}{addToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool add\+To\+Array (\begin{DoxyParamCaption}\item[{const Q\+String}]{array,  }\item[{const Q\+String}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ajoute la valeur value (String) a l\textquotesingle{}array array. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em array} & Array où il faut ajouter \\
+\hline
+{\em value} & Valeur à ajouter (String) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Succés = true sinon false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataManager_ae853a46801f77c83528be95b19cf271b}\label{classDataManager_ae853a46801f77c83528be95b19cf271b}} 
+\index{Data\+Manager@{Data\+Manager}!add\+To\+Array@{add\+To\+Array}}
+\index{add\+To\+Array@{add\+To\+Array}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{add\+To\+Array()}{addToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool add\+To\+Array (\begin{DoxyParamCaption}\item[{const Q\+String}]{array,  }\item[{const int}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ajoute la valeur value (int) a l\textquotesingle{}array array. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em array} & Array où il faut ajouter \\
+\hline
+{\em value} & Valeur à ajouter (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Succés = true sinon false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataManager_a70a1a322edd474e7df74ce2f06d8722d}\label{classDataManager_a70a1a322edd474e7df74ce2f06d8722d}} 
+\index{Data\+Manager@{Data\+Manager}!get\+Bool\+Data@{get\+Bool\+Data}}
+\index{get\+Bool\+Data@{get\+Bool\+Data}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{get\+Bool\+Data()}{getBoolData()}}
+{\footnotesize\ttfamily bool get\+Bool\+Data (\begin{DoxyParamCaption}\item[{const Q\+String}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return la valeur d\textquotesingle{}une variable (bool) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em name} & Nom de la variable à check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Sa valeur (bool) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataManager_a0539555de38fb7fbfa170007a0cb3ae3}\label{classDataManager_a0539555de38fb7fbfa170007a0cb3ae3}} 
+\index{Data\+Manager@{Data\+Manager}!Get\+Data\+Document@{Get\+Data\+Document}}
+\index{Get\+Data\+Document@{Get\+Data\+Document}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Data\+Document()}{GetDataDocument()}}
+{\footnotesize\ttfamily void Get\+Data\+Document (\begin{DoxyParamCaption}\item[{Document $\ast$}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remplit un pointeur depuis un fichier (non-\/\+R\+AM) 
+
+Créé une instance Document à partir d\textquotesingle{}un fichier locale (non-\/\+R\+AM) puis remplace le pointeur fournis en argument par cette valeur. 
+\begin{DoxyParams}{Paramètres}
+{\em doc} & Container pour stocker le résultat \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDataManager_af0c4f956eace0565b8909cdd21933da1}\label{classDataManager_af0c4f956eace0565b8909cdd21933da1}} 
+\index{Data\+Manager@{Data\+Manager}!get\+Int\+Data@{get\+Int\+Data}}
+\index{get\+Int\+Data@{get\+Int\+Data}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{get\+Int\+Data()}{getIntData()}}
+{\footnotesize\ttfamily int get\+Int\+Data (\begin{DoxyParamCaption}\item[{const Q\+String}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return la valeur d\textquotesingle{}une variable (int) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em name} & Nom de la variable à check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Sa valeur (int) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataManager_a22680422b7ea8ff8fd9c7a24a47193c3}\label{classDataManager_a22680422b7ea8ff8fd9c7a24a47193c3}} 
+\index{Data\+Manager@{Data\+Manager}!get\+Std\+String\+Data@{get\+Std\+String\+Data}}
+\index{get\+Std\+String\+Data@{get\+Std\+String\+Data}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{get\+Std\+String\+Data()}{getStdStringData()}}
+{\footnotesize\ttfamily std\+::string get\+Std\+String\+Data (\begin{DoxyParamCaption}\item[{const std\+::string}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return la valeur d\textquotesingle{}une variable (String) (S\+TL) 
+
+Enleve un bool d\textquotesingle{}une array  array Array d\textquotesingle{}où il faut enlever un string  elem bool qu\textquotesingle{}il faut enlever  true si la suppression a marché sinon false
+
+bool rem\+To\+Array(const Q\+String array, const bool elem) const \{ Document data; Get\+Data\+Document(\&data); Value\& arr(data\mbox{[}array.\+to\+Std\+String().c\+\_\+str()\mbox{]}); if(!data.Has\+Member(array.\+to\+Std\+String().c\+\_\+str())) return false; if(!arr.Is\+Array()) return false; for(Value\+::\+Const\+Value\+Iterator it=arr.\+Begin(); it!=arr.\+End(); ++it) \{ if(($\ast$it).Get\+Bool()==elem) arr.\+Erase(it, it+1); \} Save\+Document(\&data); return true; \}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em name} & Nom de la variable à check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Sa valeur (String (S\+TL)) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataManager_adcb9caff55a85e95a70b07a157ff10ce}\label{classDataManager_adcb9caff55a85e95a70b07a157ff10ce}} 
+\index{Data\+Manager@{Data\+Manager}!get\+String\+Data@{get\+String\+Data}}
+\index{get\+String\+Data@{get\+String\+Data}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{get\+String\+Data()}{getStringData()}}
+{\footnotesize\ttfamily Q\+String get\+String\+Data (\begin{DoxyParamCaption}\item[{const Q\+String}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return la valeur d\textquotesingle{}une variable (String) (Qt) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em name} & Nom de la variable à check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Sa valeur (String (Qt)) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataManager_a81de7a40c5c5184c57de175d38d20ec6}\label{classDataManager_a81de7a40c5c5184c57de175d38d20ec6}} 
+\index{Data\+Manager@{Data\+Manager}!rem\+To\+Array@{rem\+To\+Array}}
+\index{rem\+To\+Array@{rem\+To\+Array}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{rem\+To\+Array()}{remToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool rem\+To\+Array (\begin{DoxyParamCaption}\item[{const Q\+String}]{array,  }\item[{const Q\+String}]{elem }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enleve un string d\textquotesingle{}une array. 
+
+Ajoute la valeur value (bool) a l\textquotesingle{}array array  array Array où il faut ajouter  value Valeur à ajouter (bool)  Succés = true sinon false
+
+bool add\+To\+Array(const Q\+String array, const bool value) const \{ Document data; Get\+Data\+Document(\&data); if(!data.Has\+Member(array.\+to\+Std\+String().c\+\_\+str())) return false; if(!data\mbox{[}array.\+to\+Std\+String().c\+\_\+str()\mbox{]}.Is\+Array()) return false; Document\+::\+Allocator\+Type\& allocator = data.\+Get\+Allocator(); data\mbox{[}array.\+to\+Std\+String().c\+\_\+str()\mbox{]}.Push\+Back(value, allocator); Save\+Document(\&data); return true; \}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em array} & Array d\textquotesingle{}où il faut enlever un string \\
+\hline
+{\em elem} & String qu\textquotesingle{}il faut enlever \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true si la suppression a marché sinon false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataManager_ae8c8beec1b0da3b56c08b988e7c0cf09}\label{classDataManager_ae8c8beec1b0da3b56c08b988e7c0cf09}} 
+\index{Data\+Manager@{Data\+Manager}!rem\+To\+Array@{rem\+To\+Array}}
+\index{rem\+To\+Array@{rem\+To\+Array}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{rem\+To\+Array()}{remToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool rem\+To\+Array (\begin{DoxyParamCaption}\item[{const Q\+String}]{array,  }\item[{const int}]{elem }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enleve un int d\textquotesingle{}une array. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em array} & Array d\textquotesingle{}où il faut enlever un string \\
+\hline
+{\em elem} & int qu\textquotesingle{}il faut enlever \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true si la suppression a marché sinon false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataManager_a220fa849736606675492bf57f41241a1}\label{classDataManager_a220fa849736606675492bf57f41241a1}} 
+\index{Data\+Manager@{Data\+Manager}!Save\+Document@{Save\+Document}}
+\index{Save\+Document@{Save\+Document}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{Save\+Document()}{SaveDocument()}}
+{\footnotesize\ttfamily void Save\+Document (\begin{DoxyParamCaption}\item[{const Document $\ast$}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sauvegarde des donnés dans un fichier (non-\/\+R\+AM) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em doc} & Document \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDataManager_af1b5561cf95f40969d9cb44b0d01a835}\label{classDataManager_af1b5561cf95f40969d9cb44b0d01a835}} 
+\index{Data\+Manager@{Data\+Manager}!write\+Data@{write\+Data}}
+\index{write\+Data@{write\+Data}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{write\+Data()}{writeData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool write\+Data (\begin{DoxyParamCaption}\item[{const Q\+String}]{arg,  }\item[{const Q\+String}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Change la valeur de arg pour value (String) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arg} & Argument à changer \\
+\hline
+{\em value} & Valeur à appliquer (String) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Succés = true sinon false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataManager_a96ac6856ddebd921ac034c3103f1d755}\label{classDataManager_a96ac6856ddebd921ac034c3103f1d755}} 
+\index{Data\+Manager@{Data\+Manager}!write\+Data@{write\+Data}}
+\index{write\+Data@{write\+Data}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{write\+Data()}{writeData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool write\+Data (\begin{DoxyParamCaption}\item[{const Q\+String}]{arg,  }\item[{const int}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Change la valeur de arg pour value (int) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arg} & Argument à changer \\
+\hline
+{\em value} & Valeur à appliquer (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Succés = true sinon false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataManager_ab2cc4cd3515c1947b59a275f8851c2a5}\label{classDataManager_ab2cc4cd3515c1947b59a275f8851c2a5}} 
+\index{Data\+Manager@{Data\+Manager}!write\+Data@{write\+Data}}
+\index{write\+Data@{write\+Data}!Data\+Manager@{Data\+Manager}}
+\subsubsection{\texorpdfstring{write\+Data()}{writeData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool write\+Data (\begin{DoxyParamCaption}\item[{const Q\+String}]{arg,  }\item[{const bool}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Change la valeur de arg pour value (bool) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arg} & Argument à changer \\
+\hline
+{\em value} & Valeur à appliquer (bool) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Succés = true sinon false 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+C++/\+Qt/\+Ether\+One\+Updater/\hyperlink{datamanager_8h}{datamanager.\+h}\end{DoxyCompactItemize}

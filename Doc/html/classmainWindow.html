@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EtherOneUpdater: mainWindow</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">EtherOneUpdater
+   &#160;<span id="projectnumber">2.1.0</span>
+   </div>
+   <div id="projectbrief">Updateur pour EtherOne, Projet fait avec Qt5.9.0</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-slots">Connecteurs privés</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="classmainWindow-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">mainWindow</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fenêtre principale de l'Updater.  
+ <a href="classmainWindow.html#details">Plus de détails...</a></p>
+
+<p><code>#include &quot;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&quot;</code></p>
+
+<p>Est dérivée de QWidget.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:ade514f7e438d269e17aee3c2fd023839"><td class="memItemLeft" align="right" valign="top"><a id="ade514f7e438d269e17aee3c2fd023839"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#ade514f7e438d269e17aee3c2fd023839">mainWindow</a> (QWidget *parent=0)</td></tr>
+<tr class="memdesc:ade514f7e438d269e17aee3c2fd023839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur principale et unique. <br /></td></tr>
+<tr class="separator:ade514f7e438d269e17aee3c2fd023839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Connecteurs privés</h2></td></tr>
+<tr class="memitem:aeaaa3e081622166a8ca0514b3eb3ef8a"><td class="memItemLeft" align="right" valign="top"><a id="aeaaa3e081622166a8ca0514b3eb3ef8a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#aeaaa3e081622166a8ca0514b3eb3ef8a">changeData</a> (const QString, const QString)</td></tr>
+<tr class="memdesc:aeaaa3e081622166a8ca0514b3eb3ef8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">[TO BE DEPRECATED] change la valeur d'une donnée via l'ancien système <br /></td></tr>
+<tr class="separator:aeaaa3e081622166a8ca0514b3eb3ef8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d5ce0b17a87a34ac1038508e3a5c45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a52d5ce0b17a87a34ac1038508e3a5c45">checkForUpdates</a> (bool isUpdater)</td></tr>
+<tr class="memdesc:a52d5ce0b17a87a34ac1038508e3a5c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifi s'il y a une mise à jour et la télécharge puis l'installe si besoin.  <a href="#a52d5ce0b17a87a34ac1038508e3a5c45">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a52d5ce0b17a87a34ac1038508e3a5c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ec250c3c2ec4dbc0aeae77eb546e1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#ae7ec250c3c2ec4dbc0aeae77eb546e1b">checkUpdaterFiles</a> ()</td></tr>
+<tr class="memdesc:ae7ec250c3c2ec4dbc0aeae77eb546e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie que tous les fichiers ET DOSSIERS requis par l'updateur sont présent.  <a href="#ae7ec250c3c2ec4dbc0aeae77eb546e1b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae7ec250c3c2ec4dbc0aeae77eb546e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f87acf49e48db90c3c8117bb99682b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a9f87acf49e48db90c3c8117bb99682b3">downloadFile</a> (QString file, QString newFile, bool useFTP)</td></tr>
+<tr class="memdesc:a9f87acf49e48db90c3c8117bb99682b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Téléchargement d'un fichier.  <a href="#a9f87acf49e48db90c3c8117bb99682b3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9f87acf49e48db90c3c8117bb99682b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e4aea9eb9a73812933b509b20b82e5"><td class="memItemLeft" align="right" valign="top"><a id="a63e4aea9eb9a73812933b509b20b82e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a63e4aea9eb9a73812933b509b20b82e5">getData</a> ()</td></tr>
+<tr class="memdesc:a63e4aea9eb9a73812933b509b20b82e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">[TO BE DEPRECATED] obtient la data à partir de l'ancien system de stockage des donnés <br /></td></tr>
+<tr class="separator:a63e4aea9eb9a73812933b509b20b82e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072f18613ff572bc7554b93a4904fd14"><td class="memItemLeft" align="right" valign="top"><a id="a072f18613ff572bc7554b93a4904fd14"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a072f18613ff572bc7554b93a4904fd14">getEtPath</a> ()</td></tr>
+<tr class="memdesc:a072f18613ff572bc7554b93a4904fd14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche la fenêtre pour obtenir le path vers le modpack. <br /></td></tr>
+<tr class="separator:a072f18613ff572bc7554b93a4904fd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb015d99703b6a2624fc2d543a10552d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#abb015d99703b6a2624fc2d543a10552d">installationParser</a> (QString)</td></tr>
+<tr class="memdesc:abb015d99703b6a2624fc2d543a10552d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parseur du fichier d'instruction d'installation (et interpréteur)  <a href="#abb015d99703b6a2624fc2d543a10552d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abb015d99703b6a2624fc2d543a10552d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3534bb135c2bc4e3c1ff351a004fb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a0f3534bb135c2bc4e3c1ff351a004fb6">installUpUpdate</a> ()</td></tr>
+<tr class="memdesc:a0f3534bb135c2bc4e3c1ff351a004fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installe une mise à jour de l'updater (appelé par checkForUpdates)  <a href="#a0f3534bb135c2bc4e3c1ff351a004fb6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0f3534bb135c2bc4e3c1ff351a004fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eed4f5e05f3553c3318d8ce8a3dd94d"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a5eed4f5e05f3553c3318d8ce8a3dd94d">parseString</a> (QString)</td></tr>
+<tr class="memdesc:a5eed4f5e05f3553c3318d8ce8a3dd94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction interne requise au fonctionnement du installationParser  <a href="#a5eed4f5e05f3553c3318d8ce8a3dd94d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5eed4f5e05f3553c3318d8ce8a3dd94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0cf5a7e8b00a7bfd152437d0a97269"><td class="memItemLeft" align="right" valign="top"><a id="a8c0cf5a7e8b00a7bfd152437d0a97269"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a8c0cf5a7e8b00a7bfd152437d0a97269">setUpUpdater</a> ()</td></tr>
+<tr class="memdesc:a8c0cf5a7e8b00a7bfd152437d0a97269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Créé les fichier/dossiers manquant(s) <br /></td></tr>
+<tr class="separator:a8c0cf5a7e8b00a7bfd152437d0a97269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddc815f8dd62fe0edb3bd07badce660"><td class="memItemLeft" align="right" valign="top"><a id="a0ddc815f8dd62fe0edb3bd07badce660"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a0ddc815f8dd62fe0edb3bd07badce660">startModpackUpdate</a> ()</td></tr>
+<tr class="memdesc:a0ddc815f8dd62fe0edb3bd07badce660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coordinateur des mises à jour du modpack. <br /></td></tr>
+<tr class="separator:a0ddc815f8dd62fe0edb3bd07badce660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e2b9a5478b79b77911d1646a7c8204"><td class="memItemLeft" align="right" valign="top"><a id="a42e2b9a5478b79b77911d1646a7c8204"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a42e2b9a5478b79b77911d1646a7c8204">startStatus</a> ()</td></tr>
+<tr class="memdesc:a42e2b9a5478b79b77911d1646a7c8204"><td class="mdescLeft">&#160;</td><td class="mdescRight">[TO BE IMPLEMENTED] démarre le processus de vérification des status <br /></td></tr>
+<tr class="separator:a42e2b9a5478b79b77911d1646a7c8204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f43ddb89ca56a42446630e9b7e1153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a47f43ddb89ca56a42446630e9b7e1153">versionParser</a> (bool isUpdater)</td></tr>
+<tr class="memdesc:a47f43ddb89ca56a42446630e9b7e1153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse le fichier de versions obtenu du téléchargement.  <a href="#a47f43ddb89ca56a42446630e9b7e1153">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a47f43ddb89ca56a42446630e9b7e1153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:aef8ff65705a8c26ed31772b77240e427"><td class="memItemLeft" align="right" valign="top"><a id="aef8ff65705a8c26ed31772b77240e427"></a>
+QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#aef8ff65705a8c26ed31772b77240e427">b_Exit</a> = new QPushButton(&quot;Exit&quot;)</td></tr>
+<tr class="memdesc:aef8ff65705a8c26ed31772b77240e427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boutton 'Exit'. <br /></td></tr>
+<tr class="separator:aef8ff65705a8c26ed31772b77240e427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de859342d8aacadd86ae77eba5aef17"><td class="memItemLeft" align="right" valign="top"><a id="a4de859342d8aacadd86ae77eba5aef17"></a>
+QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a4de859342d8aacadd86ae77eba5aef17">b_Install</a> = new QPushButton(&quot;Install&quot;)</td></tr>
+<tr class="memdesc:a4de859342d8aacadd86ae77eba5aef17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boutton 'Install'. <br /></td></tr>
+<tr class="separator:a4de859342d8aacadd86ae77eba5aef17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1b4c13ddb95bd6b17ab03a0039489a"><td class="memItemLeft" align="right" valign="top"><a id="a0e1b4c13ddb95bd6b17ab03a0039489a"></a>
+QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a0e1b4c13ddb95bd6b17ab03a0039489a">b_Options</a> = new QPushButton(&quot;Options&quot;)</td></tr>
+<tr class="memdesc:a0e1b4c13ddb95bd6b17ab03a0039489a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boutton 'Options' (en cours d'implémentation) <br /></td></tr>
+<tr class="separator:a0e1b4c13ddb95bd6b17ab03a0039489a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65a00ab1683cb5c52531cb6842641d4"><td class="memItemLeft" align="right" valign="top"><a id="ad65a00ab1683cb5c52531cb6842641d4"></a>
+QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#ad65a00ab1683cb5c52531cb6842641d4">b_Status</a> = new QPushButton(&quot;Status&quot;)</td></tr>
+<tr class="memdesc:ad65a00ab1683cb5c52531cb6842641d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boutton 'Status' (non-implémenté) <br /></td></tr>
+<tr class="separator:ad65a00ab1683cb5c52531cb6842641d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f78658a7c3422e891307f94b3fb91a2"><td class="memItemLeft" align="right" valign="top"><a id="a1f78658a7c3422e891307f94b3fb91a2"></a>
+<a class="el" href="classDataManager.html">DataManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a1f78658a7c3422e891307f94b3fb91a2">dataManager</a></td></tr>
+<tr class="memdesc:a1f78658a7c3422e891307f94b3fb91a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manager de donnés pour les donnés de configuration (version de l'updateur, du modpack ...) <br /></td></tr>
+<tr class="separator:a1f78658a7c3422e891307f94b3fb91a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ea46f5179a7059dd640d6e16b8d130"><td class="memItemLeft" align="right" valign="top"><a id="ad4ea46f5179a7059dd640d6e16b8d130"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#ad4ea46f5179a7059dd640d6e16b8d130">DontPrompUpdateErrors</a></td></tr>
+<tr class="memdesc:ad4ea46f5179a7059dd640d6e16b8d130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marquer les erreurs ou pas ? <br /></td></tr>
+<tr class="separator:ad4ea46f5179a7059dd640d6e16b8d130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586234d31340f9a0dbf0b6ba8b090325"><td class="memItemLeft" align="right" valign="top"><a id="a586234d31340f9a0dbf0b6ba8b090325"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a586234d31340f9a0dbf0b6ba8b090325">etPath</a></td></tr>
+<tr class="memdesc:a586234d31340f9a0dbf0b6ba8b090325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path vers le dossier général du modpack. <br /></td></tr>
+<tr class="separator:a586234d31340f9a0dbf0b6ba8b090325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad569ebc4a020a221a941751f9acc95f"><td class="memItemLeft" align="right" valign="top"><a id="aad569ebc4a020a221a941751f9acc95f"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#aad569ebc4a020a221a941751f9acc95f">etVersion</a></td></tr>
+<tr class="memdesc:aad569ebc4a020a221a941751f9acc95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version du modpack. <br /></td></tr>
+<tr class="separator:aad569ebc4a020a221a941751f9acc95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b61699b387e89a54c46cc2159c4346"><td class="memItemLeft" align="right" valign="top"><a id="ad8b61699b387e89a54c46cc2159c4346"></a>
+<a class="el" href="classkProcess.html">kProcess</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#ad8b61699b387e89a54c46cc2159c4346">extrn</a></td></tr>
+<tr class="memdesc:ad8b61699b387e89a54c46cc2159c4346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processus de téléchargement. <br /></td></tr>
+<tr class="separator:ad8b61699b387e89a54c46cc2159c4346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d779eb0b5a74e95f179e6bb4585114"><td class="memItemLeft" align="right" valign="top"><a id="a22d779eb0b5a74e95f179e6bb4585114"></a>
+QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a22d779eb0b5a74e95f179e6bb4585114">l_Credits</a> = new QLabel(&quot;Updater by kilian3008&quot;)</td></tr>
+<tr class="memdesc:a22d779eb0b5a74e95f179e6bb4585114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Credits. <br /></td></tr>
+<tr class="separator:a22d779eb0b5a74e95f179e6bb4585114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b764a80941f571b361459be4e25ad6"><td class="memItemLeft" align="right" valign="top"><a id="af5b764a80941f571b361459be4e25ad6"></a>
+QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#af5b764a80941f571b361459be4e25ad6">l_etVersion</a> = new QLabel(&quot;ERROR&quot;)</td></tr>
+<tr class="memdesc:af5b764a80941f571b361459be4e25ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version d'EtherOne (rempli plus tard) <br /></td></tr>
+<tr class="separator:af5b764a80941f571b361459be4e25ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccd91e503dac34c0bfd1e18a7876125"><td class="memItemLeft" align="right" valign="top"><a id="afccd91e503dac34c0bfd1e18a7876125"></a>
+QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#afccd91e503dac34c0bfd1e18a7876125">l_img</a> = new QLabel()</td></tr>
+<tr class="memdesc:afccd91e503dac34c0bfd1e18a7876125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Label qui permet d'afficher le Pixmap qui contien une image (image de fond) <br /></td></tr>
+<tr class="separator:afccd91e503dac34c0bfd1e18a7876125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac73cd332002dbf7057e9f39f123bfa"><td class="memItemLeft" align="right" valign="top"><a id="a1ac73cd332002dbf7057e9f39f123bfa"></a>
+QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a1ac73cd332002dbf7057e9f39f123bfa">l_McVersion</a> = new QLabel(&quot;EtherOne Version&quot;)</td></tr>
+<tr class="memdesc:a1ac73cd332002dbf7057e9f39f123bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">"EtherOne Version" <br /></td></tr>
+<tr class="separator:a1ac73cd332002dbf7057e9f39f123bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dcd7d9704d0284fd91442e4cc1ec721"><td class="memItemLeft" align="right" valign="top"><a id="a3dcd7d9704d0284fd91442e4cc1ec721"></a>
+QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a3dcd7d9704d0284fd91442e4cc1ec721">layout</a> = new QGridLayout()</td></tr>
+<tr class="memdesc:a3dcd7d9704d0284fd91442e4cc1ec721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Layout principale. <br /></td></tr>
+<tr class="separator:a3dcd7d9704d0284fd91442e4cc1ec721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7a3201ec1a3481d2f4d6446fd02569"><td class="memItemLeft" align="right" valign="top"><a id="aed7a3201ec1a3481d2f4d6446fd02569"></a>
+<a class="el" href="classLoger.html">Loger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#aed7a3201ec1a3481d2f4d6446fd02569">log</a> = new <a class="el" href="classLoger.html">Loger</a>(&quot;logs.log&quot;)</td></tr>
+<tr class="memdesc:aed7a3201ec1a3481d2f4d6446fd02569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Future système de log. <br /></td></tr>
+<tr class="separator:aed7a3201ec1a3481d2f4d6446fd02569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79abdebffdd2e316715d5d46a0cc644c"><td class="memItemLeft" align="right" valign="top"><a id="a79abdebffdd2e316715d5d46a0cc644c"></a>
+QList&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a79abdebffdd2e316715d5d46a0cc644c">m_installerFiles</a> = {FILE_DATA, FILE_VERSION, FILE_UP_VERSION}</td></tr>
+<tr class="memdesc:a79abdebffdd2e316715d5d46a0cc644c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liste des fichiers requies par l'installeur. <br /></td></tr>
+<tr class="separator:a79abdebffdd2e316715d5d46a0cc644c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13618675bf965bf7f8dd57d48f74e4c"><td class="memItemLeft" align="right" valign="top"><a id="ab13618675bf965bf7f8dd57d48f74e4c"></a>
+QList&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#ab13618675bf965bf7f8dd57d48f74e4c">m_installerFolders</a> = {FOLDER_IMGS, FOLDER_UP_DATA, FOLDER_TEMP}</td></tr>
+<tr class="memdesc:ab13618675bf965bf7f8dd57d48f74e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liste des dossiers requies par l'installeur. <br /></td></tr>
+<tr class="separator:ab13618675bf965bf7f8dd57d48f74e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac968818db675e22156b4521cb9b43781"><td class="memItemLeft" align="right" valign="top"><a id="ac968818db675e22156b4521cb9b43781"></a>
+QString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#ac968818db675e22156b4521cb9b43781">m_Tile</a> = new QString()</td></tr>
+<tr class="memdesc:ac968818db675e22156b4521cb9b43781"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON UTILISE. <br /></td></tr>
+<tr class="separator:ac968818db675e22156b4521cb9b43781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee4e2756aae8a5fb3761102d5d12d35"><td class="memItemLeft" align="right" valign="top"><a id="adee4e2756aae8a5fb3761102d5d12d35"></a>
+QPixmap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#adee4e2756aae8a5fb3761102d5d12d35">pm_BackGround</a> = new QPixmap(FOLDER_IMGS&quot;/back.jpg&quot;)</td></tr>
+<tr class="memdesc:adee4e2756aae8a5fb3761102d5d12d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixmap contenant l'image en elle même. <br /></td></tr>
+<tr class="separator:adee4e2756aae8a5fb3761102d5d12d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a012ed0f09b57bc925a14d6e93baa73e9"><td class="memItemLeft" align="right" valign="top"><a id="a012ed0f09b57bc925a14d6e93baa73e9"></a>
+QShortcut *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a012ed0f09b57bc925a14d6e93baa73e9">quietMode</a> = new QShortcut(QKeySequence(tr(&quot;Ctrl+Q&quot;)), this)</td></tr>
+<tr class="memdesc:a012ed0f09b57bc925a14d6e93baa73e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut pour activer le quiet mode (Ctrl+Q) <br /></td></tr>
+<tr class="separator:a012ed0f09b57bc925a14d6e93baa73e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0670d734754fdc067c4990ab033ab8a1"><td class="memItemLeft" align="right" valign="top"><a id="a0670d734754fdc067c4990ab033ab8a1"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmainWindow.html#a0670d734754fdc067c4990ab033ab8a1">updaterVersion</a></td></tr>
+<tr class="memdesc:a0670d734754fdc067c4990ab033ab8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version de l'updateur. <br /></td></tr>
+<tr class="separator:a0670d734754fdc067c4990ab033ab8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fenêtre principale de l'Updater. </p>
+<p>Toutes les actions sont coordonnés depuis cette fenêtre, autant les actions de rendu que les action au niveau logiciel (installation d'une MAJ par exemple). </p>
+</div><h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a52d5ce0b17a87a34ac1038508e3a5c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52d5ce0b17a87a34ac1038508e3a5c45">&#9670;&nbsp;</a></span>checkForUpdates</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void checkForUpdates </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isUpdater</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vérifi s'il y a une mise à jour et la télécharge puis l'installe si besoin. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isUpdater</td><td>Si true, on vérifira qu'il n'y a pas de mise à jour de l'updater sinon on vérifi qu'il n'y a pas de mise à jour du modpack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae7ec250c3c2ec4dbc0aeae77eb546e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ec250c3c2ec4dbc0aeae77eb546e1b">&#9670;&nbsp;</a></span>checkUpdaterFiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool checkUpdaterFiles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vérifie que tous les fichiers ET DOSSIERS requis par l'updateur sont présent. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true s'ils sont tous la sinon false </dd></dl>
+
+</div>
+</div>
+<a id="a9f87acf49e48db90c3c8117bb99682b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f87acf49e48db90c3c8117bb99682b3">&#9670;&nbsp;</a></span>downloadFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void downloadFile </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>newFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useFTP</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Téléchargement d'un fichier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Fichier à télécharger (lien http) </td></tr>
+    <tr><td class="paramname">newFile</td><td>Nom du fichier téléchargé </td></tr>
+    <tr><td class="paramname">useFTP</td><td>Utilisatio ou non du protocol FTP (non-implémenté) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abb015d99703b6a2624fc2d543a10552d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb015d99703b6a2624fc2d543a10552d">&#9670;&nbsp;</a></span>installationParser</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool installationParser </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>version</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parseur du fichier d'instruction d'installation (et interpréteur) </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si tout c'est bien passé sinon false </dd></dl>
+
+</div>
+</div>
+<a id="a0f3534bb135c2bc4e3c1ff351a004fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f3534bb135c2bc4e3c1ff351a004fb6">&#9670;&nbsp;</a></span>installUpUpdate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void installUpUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Installe une mise à jour de l'updater (appelé par checkForUpdates) </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classmainWindow.html#a52d5ce0b17a87a34ac1038508e3a5c45" title="Vérifi s&#39;il y a une mise à jour et la télécharge puis l&#39;installe si besoin. ">checkForUpdates(bool)</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5eed4f5e05f3553c3318d8ce8a3dd94d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eed4f5e05f3553c3318d8ce8a3dd94d">&#9670;&nbsp;</a></span>parseString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList parseString </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>toParse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>fonction interne requise au fonctionnement du installationParser </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classmainWindow.html#abb015d99703b6a2624fc2d543a10552d" title="Parseur du fichier d&#39;instruction d&#39;installation (et interpréteur) ">installationParser(QString)</a> </dd></dl>
+<dl class="section return"><dt>Renvoie</dt><dd>/// </dd></dl>
+
+</div>
+</div>
+<a id="a47f43ddb89ca56a42446630e9b7e1153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f43ddb89ca56a42446630e9b7e1153">&#9670;&nbsp;</a></span>versionParser</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void versionParser </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isUpdater</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse le fichier de versions obtenu du téléchargement. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isUpdater</td><td>Si true, le fichier est celui de mise à jour de l'updater sinon c'est celui de mise à jour du modpack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>E:/C++/Qt/EtherOneUpdater/<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a></li>
+<li>E:/C++/Qt/EtherOneUpdater/<a class="el" href="mainwindow_8cpp.html">mainwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

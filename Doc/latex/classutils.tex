@@ -1,0 +1,138 @@
+\hypertarget{classutils}{}\section{utils}
+\label{classutils}\index{utils@{utils}}
+
+
+Class contenant les outils.  
+
+
+
+
+{\ttfamily \#include \char`\"{}uputils.\+h\char`\"{}}
+
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classutils_a75e4c12b24b35e930fe42d654e8f5d7a}{box\+Crit} (Q\+String msg, Q\+String title=\char`\"{}critical\char`\"{})
+\begin{DoxyCompactList}\small\item\em Créé une boite de dialogue de type \char`\"{}error\char`\"{}. \end{DoxyCompactList}\item 
+static void \hyperlink{classutils_aed917b49e1356903b63626302d9adcc2}{box\+Info} (Q\+String msg, Q\+String title=\char`\"{}info\char`\"{})
+\begin{DoxyCompactList}\small\item\em Créé une boite de dialogue de type \char`\"{}information\char`\"{}. \end{DoxyCompactList}\item 
+static void \hyperlink{classutils_a0621bcdcce14a9175584c8937abb55f4}{box\+Warning} (Q\+String msg, Q\+String title=\char`\"{}warning\char`\"{})
+\begin{DoxyCompactList}\small\item\em Créé une boite de dialogue de type \char`\"{}warning\char`\"{}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Input\+It , class T $>$ }\\static bool \hyperlink{classutils_a9b2123e5c94d7736f5f32ab222d194df}{find} (Input\+It first, Input\+It last, const T \&value)
+\begin{DoxyCompactList}\small\item\em recherche value entre first et last, si trouvé retourne true \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Input\+It , class T $>$ }\\static int \hyperlink{classutils_a8eff63d3e19d4e7c3f4a862aa639621e}{find\+Num} (Input\+It first, Input\+It last, const T \&value)
+\begin{DoxyCompactList}\small\item\em recherche value entre first et last (iterators) et retourne le nombre de fois où l\textquotesingle{}expression apparaît \end{DoxyCompactList}\item 
+static void \hyperlink{classutils_ad0d97a4388f6ee0cb9557fe1302bddd4}{replace} (std\+::string str, std\+::string old, std\+::string new\+Str)
+\begin{DoxyCompactList}\small\item\em \mbox{[}M\+A\+R\+C\+HE P\+AS\mbox{]}Remplace un string dans un string par un autre string \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classutils_a54ec377b204f138096b115fad3bb22b1}\label{classutils_a54ec377b204f138096b115fad3bb22b1}} 
+{\footnotesize template$<$typename T $>$ }\\static Q\+String \hyperlink{classutils_a54ec377b204f138096b115fad3bb22b1}{to\+Q\+String} (T \&any)
+\begin{DoxyCompactList}\small\item\em Cast T vers Q\+String. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Class contenant les outils. 
+
+Class servant de namespace pour des raisons de link. Toutes les foncions de cette class sont static afin d\textquotesingle{}être utilisés sans créer une instance de la classe 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classutils_a75e4c12b24b35e930fe42d654e8f5d7a}\label{classutils_a75e4c12b24b35e930fe42d654e8f5d7a}} 
+\index{utils@{utils}!box\+Crit@{box\+Crit}}
+\index{box\+Crit@{box\+Crit}!utils@{utils}}
+\subsubsection{\texorpdfstring{box\+Crit()}{boxCrit()}}
+{\footnotesize\ttfamily static void box\+Crit (\begin{DoxyParamCaption}\item[{Q\+String}]{msg,  }\item[{Q\+String}]{title = {\ttfamily \char`\"{}critical\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Créé une boite de dialogue de type \char`\"{}error\char`\"{}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em msg} & Message à afficher \\
+\hline
+{\em title} & Titre de la fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classutils_aed917b49e1356903b63626302d9adcc2}\label{classutils_aed917b49e1356903b63626302d9adcc2}} 
+\index{utils@{utils}!box\+Info@{box\+Info}}
+\index{box\+Info@{box\+Info}!utils@{utils}}
+\subsubsection{\texorpdfstring{box\+Info()}{boxInfo()}}
+{\footnotesize\ttfamily static void box\+Info (\begin{DoxyParamCaption}\item[{Q\+String}]{msg,  }\item[{Q\+String}]{title = {\ttfamily \char`\"{}info\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Créé une boite de dialogue de type \char`\"{}information\char`\"{}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em msg} & Message à afficher \\
+\hline
+{\em title} & Titre de la fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classutils_a0621bcdcce14a9175584c8937abb55f4}\label{classutils_a0621bcdcce14a9175584c8937abb55f4}} 
+\index{utils@{utils}!box\+Warning@{box\+Warning}}
+\index{box\+Warning@{box\+Warning}!utils@{utils}}
+\subsubsection{\texorpdfstring{box\+Warning()}{boxWarning()}}
+{\footnotesize\ttfamily static void box\+Warning (\begin{DoxyParamCaption}\item[{Q\+String}]{msg,  }\item[{Q\+String}]{title = {\ttfamily \char`\"{}warning\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Créé une boite de dialogue de type \char`\"{}warning\char`\"{}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em msg} & Message à afficher \\
+\hline
+{\em title} & Titre de la fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classutils_a9b2123e5c94d7736f5f32ab222d194df}\label{classutils_a9b2123e5c94d7736f5f32ab222d194df}} 
+\index{utils@{utils}!find@{find}}
+\index{find@{find}!utils@{utils}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily static bool find (\begin{DoxyParamCaption}\item[{Input\+It}]{first,  }\item[{Input\+It}]{last,  }\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+recherche value entre first et last, si trouvé retourne true 
+
+\begin{DoxyReturn}{Renvoie}
+True si value est entre first et last sinon false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classutils_a8eff63d3e19d4e7c3f4a862aa639621e}\label{classutils_a8eff63d3e19d4e7c3f4a862aa639621e}} 
+\index{utils@{utils}!find\+Num@{find\+Num}}
+\index{find\+Num@{find\+Num}!utils@{utils}}
+\subsubsection{\texorpdfstring{find\+Num()}{findNum()}}
+{\footnotesize\ttfamily static int find\+Num (\begin{DoxyParamCaption}\item[{Input\+It}]{first,  }\item[{Input\+It}]{last,  }\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+recherche value entre first et last (iterators) et retourne le nombre de fois où l\textquotesingle{}expression apparaît 
+
+\begin{DoxyReturn}{Renvoie}
+Le nombre de fois où appraît l\textquotesingle{}expression 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classutils_ad0d97a4388f6ee0cb9557fe1302bddd4}\label{classutils_ad0d97a4388f6ee0cb9557fe1302bddd4}} 
+\index{utils@{utils}!replace@{replace}}
+\index{replace@{replace}!utils@{utils}}
+\subsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily static void replace (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{std\+::string}]{old,  }\item[{std\+::string}]{new\+Str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\mbox{[}M\+A\+R\+C\+HE P\+AS\mbox{]}Remplace un string dans un string par un autre string 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & Conteneur \\
+\hline
+{\em old} & Ancien string \\
+\hline
+{\em new\+Str} & Nouveau string \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+C++/\+Qt/\+Ether\+One\+Updater/\hyperlink{uputils_8h}{uputils.\+h}\end{DoxyCompactItemize}

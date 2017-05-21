@@ -1,0 +1,78 @@
+\hypertarget{classkProcess}{}\section{k\+Process}
+\label{classkProcess}\index{k\+Process@{k\+Process}}
+
+
+Protocol de téléchargement.  
+
+
+
+
+{\ttfamily \#include \char`\"{}kprocess.\+h\char`\"{}}
+
+
+
+Est dérivée de Q\+Process.
+
+\subsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classkProcess_adce39310562b547379ebd0dad0a7dfba}\label{classkProcess_adce39310562b547379ebd0dad0a7dfba}} 
+void \hyperlink{classkProcess_adce39310562b547379ebd0dad0a7dfba}{cancel\+DL} ()
+\begin{DoxyCompactList}\small\item\em Annule la commande. \end{DoxyCompactList}\item 
+void \hyperlink{classkProcess_aa9353ddae96a106044fa299ae2378087}{finish\+Proc} (int code)
+\begin{DoxyCompactList}\small\item\em La commande a terminée. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classkProcess_aee2348f82d367b9e52f47969a0e0146d}\label{classkProcess_aee2348f82d367b9e52f47969a0e0146d}} 
+void \hyperlink{classkProcess_aee2348f82d367b9e52f47969a0e0146d}{hide\+Win} ()
+\begin{DoxyCompactList}\small\item\em Cache la fanêtre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classkProcess_a12b7b398d9794dcc293ded8fa9c76989}\label{classkProcess_a12b7b398d9794dcc293ded8fa9c76989}} 
+void \hyperlink{classkProcess_a12b7b398d9794dcc293ded8fa9c76989}{show\+Win} ()
+\begin{DoxyCompactList}\small\item\em Affiche la fenêtre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classkProcess_a1ebe96a8060872f44d9c1b7690c9abc1}\label{classkProcess_a1ebe96a8060872f44d9c1b7690c9abc1}} 
+void \hyperlink{classkProcess_a1ebe96a8060872f44d9c1b7690c9abc1}{\+\_\+\+My\+Base} ()
+\begin{DoxyCompactList}\small\item\em Fonction appelée par T\+O\+US les constructeurs pour setup les connections. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classkProcess_a7971346eea08a760a98ab2049ca8ed9a}\label{classkProcess_a7971346eea08a760a98ab2049ca8ed9a}} 
+\hyperlink{classdlWindow}{dl\+Window} $\ast$ \hyperlink{classkProcess_a7971346eea08a760a98ab2049ca8ed9a}{dlwin}
+\begin{DoxyCompactList}\small\item\em Fenêtre pour montrer l\textquotesingle{}output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classkProcess_a986998c6e21642024017511cc1dd862e}\label{classkProcess_a986998c6e21642024017511cc1dd862e}} 
+void \hyperlink{classkProcess_a986998c6e21642024017511cc1dd862e}{read\+Error} ()
+\begin{DoxyCompactList}\small\item\em Lire correctement une erreur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classkProcess_a922dfb6bad1ed7c25d24db374ad63326}\label{classkProcess_a922dfb6bad1ed7c25d24db374ad63326}} 
+void \hyperlink{classkProcess_a922dfb6bad1ed7c25d24db374ad63326}{read\+Std\+Output} ()
+\begin{DoxyCompactList}\small\item\em Lire l\textquotesingle{}output de la ligne de commande. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Protocol de téléchargement. 
+
+Utilise une ligne de commande pour télécharger des fichiers et récupère l\textquotesingle{}output généré par wget 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classkProcess_aa9353ddae96a106044fa299ae2378087}\label{classkProcess_aa9353ddae96a106044fa299ae2378087}} 
+\index{k\+Process@{k\+Process}!finish\+Proc@{finish\+Proc}}
+\index{finish\+Proc@{finish\+Proc}!k\+Process@{k\+Process}}
+\subsubsection{\texorpdfstring{finish\+Proc}{finishProc}}
+{\footnotesize\ttfamily void finish\+Proc (\begin{DoxyParamCaption}\item[{int}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [slot]}}
+
+
+
+La commande a terminée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em code} & retournée par la ligne de commande \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+C++/\+Qt/\+Ether\+One\+Updater/\hyperlink{kprocess_8h}{kprocess.\+h}\end{DoxyCompactItemize}

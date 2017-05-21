@@ -1,0 +1,240 @@
+\hypertarget{classmainWindow}{}\section{main\+Window}
+\label{classmainWindow}\index{main\+Window@{main\+Window}}
+
+
+Fenêtre principale de l\textquotesingle{}Updater.  
+
+
+
+
+{\ttfamily \#include \char`\"{}mainwindow.\+h\char`\"{}}
+
+
+
+Est dérivée de Q\+Widget.
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmainWindow_ade514f7e438d269e17aee3c2fd023839}\label{classmainWindow_ade514f7e438d269e17aee3c2fd023839}} 
+\hyperlink{classmainWindow_ade514f7e438d269e17aee3c2fd023839}{main\+Window} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructeur principale et unique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmainWindow_aeaaa3e081622166a8ca0514b3eb3ef8a}\label{classmainWindow_aeaaa3e081622166a8ca0514b3eb3ef8a}} 
+void \hyperlink{classmainWindow_aeaaa3e081622166a8ca0514b3eb3ef8a}{change\+Data} (const Q\+String, const Q\+String)
+\begin{DoxyCompactList}\small\item\em \mbox{[}TO BE D\+E\+P\+R\+E\+C\+A\+T\+ED\mbox{]} change la valeur d\textquotesingle{}une donnée via l\textquotesingle{}ancien système \end{DoxyCompactList}\item 
+void \hyperlink{classmainWindow_a52d5ce0b17a87a34ac1038508e3a5c45}{check\+For\+Updates} (bool is\+Updater)
+\begin{DoxyCompactList}\small\item\em Vérifi s\textquotesingle{}il y a une mise à jour et la télécharge puis l\textquotesingle{}installe si besoin. \end{DoxyCompactList}\item 
+bool \hyperlink{classmainWindow_ae7ec250c3c2ec4dbc0aeae77eb546e1b}{check\+Updater\+Files} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que tous les fichiers ET D\+O\+S\+S\+I\+E\+RS requis par l\textquotesingle{}updateur sont présent. \end{DoxyCompactList}\item 
+void \hyperlink{classmainWindow_a9f87acf49e48db90c3c8117bb99682b3}{download\+File} (Q\+String file, Q\+String new\+File, bool use\+F\+TP)
+\begin{DoxyCompactList}\small\item\em Téléchargement d\textquotesingle{}un fichier. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a63e4aea9eb9a73812933b509b20b82e5}\label{classmainWindow_a63e4aea9eb9a73812933b509b20b82e5}} 
+void \hyperlink{classmainWindow_a63e4aea9eb9a73812933b509b20b82e5}{get\+Data} ()
+\begin{DoxyCompactList}\small\item\em \mbox{[}TO BE D\+E\+P\+R\+E\+C\+A\+T\+ED\mbox{]} obtient la data à partir de l\textquotesingle{}ancien system de stockage des donnés \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a072f18613ff572bc7554b93a4904fd14}\label{classmainWindow_a072f18613ff572bc7554b93a4904fd14}} 
+void \hyperlink{classmainWindow_a072f18613ff572bc7554b93a4904fd14}{get\+Et\+Path} ()
+\begin{DoxyCompactList}\small\item\em Affiche la fenêtre pour obtenir le path vers le modpack. \end{DoxyCompactList}\item 
+bool \hyperlink{classmainWindow_abb015d99703b6a2624fc2d543a10552d}{installation\+Parser} (Q\+String)
+\begin{DoxyCompactList}\small\item\em Parseur du fichier d\textquotesingle{}instruction d\textquotesingle{}installation (et interpréteur) \end{DoxyCompactList}\item 
+void \hyperlink{classmainWindow_a0f3534bb135c2bc4e3c1ff351a004fb6}{install\+Up\+Update} ()
+\begin{DoxyCompactList}\small\item\em Installe une mise à jour de l\textquotesingle{}updater (appelé par check\+For\+Updates) \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{classmainWindow_a5eed4f5e05f3553c3318d8ce8a3dd94d}{parse\+String} (Q\+String)
+\begin{DoxyCompactList}\small\item\em fonction interne requise au fonctionnement du installation\+Parser \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a8c0cf5a7e8b00a7bfd152437d0a97269}\label{classmainWindow_a8c0cf5a7e8b00a7bfd152437d0a97269}} 
+void \hyperlink{classmainWindow_a8c0cf5a7e8b00a7bfd152437d0a97269}{set\+Up\+Updater} ()
+\begin{DoxyCompactList}\small\item\em Créé les fichier/dossiers manquant(s) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a0ddc815f8dd62fe0edb3bd07badce660}\label{classmainWindow_a0ddc815f8dd62fe0edb3bd07badce660}} 
+void \hyperlink{classmainWindow_a0ddc815f8dd62fe0edb3bd07badce660}{start\+Modpack\+Update} ()
+\begin{DoxyCompactList}\small\item\em Coordinateur des mises à jour du modpack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a42e2b9a5478b79b77911d1646a7c8204}\label{classmainWindow_a42e2b9a5478b79b77911d1646a7c8204}} 
+void \hyperlink{classmainWindow_a42e2b9a5478b79b77911d1646a7c8204}{start\+Status} ()
+\begin{DoxyCompactList}\small\item\em \mbox{[}TO BE I\+M\+P\+L\+E\+M\+E\+N\+T\+ED\mbox{]} démarre le processus de vérification des status \end{DoxyCompactList}\item 
+void \hyperlink{classmainWindow_a47f43ddb89ca56a42446630e9b7e1153}{version\+Parser} (bool is\+Updater)
+\begin{DoxyCompactList}\small\item\em Parse le fichier de versions obtenu du téléchargement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmainWindow_aef8ff65705a8c26ed31772b77240e427}\label{classmainWindow_aef8ff65705a8c26ed31772b77240e427}} 
+Q\+Push\+Button $\ast$ \hyperlink{classmainWindow_aef8ff65705a8c26ed31772b77240e427}{b\+\_\+\+Exit} = new Q\+Push\+Button(\char`\"{}Exit\char`\"{})
+\begin{DoxyCompactList}\small\item\em Boutton \textquotesingle{}Exit\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a4de859342d8aacadd86ae77eba5aef17}\label{classmainWindow_a4de859342d8aacadd86ae77eba5aef17}} 
+Q\+Push\+Button $\ast$ \hyperlink{classmainWindow_a4de859342d8aacadd86ae77eba5aef17}{b\+\_\+\+Install} = new Q\+Push\+Button(\char`\"{}Install\char`\"{})
+\begin{DoxyCompactList}\small\item\em Boutton \textquotesingle{}Install\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a0e1b4c13ddb95bd6b17ab03a0039489a}\label{classmainWindow_a0e1b4c13ddb95bd6b17ab03a0039489a}} 
+Q\+Push\+Button $\ast$ \hyperlink{classmainWindow_a0e1b4c13ddb95bd6b17ab03a0039489a}{b\+\_\+\+Options} = new Q\+Push\+Button(\char`\"{}Options\char`\"{})
+\begin{DoxyCompactList}\small\item\em Boutton \textquotesingle{}Options\textquotesingle{} (en cours d\textquotesingle{}implémentation) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_ad65a00ab1683cb5c52531cb6842641d4}\label{classmainWindow_ad65a00ab1683cb5c52531cb6842641d4}} 
+Q\+Push\+Button $\ast$ \hyperlink{classmainWindow_ad65a00ab1683cb5c52531cb6842641d4}{b\+\_\+\+Status} = new Q\+Push\+Button(\char`\"{}Status\char`\"{})
+\begin{DoxyCompactList}\small\item\em Boutton \textquotesingle{}Status\textquotesingle{} (non-\/implémenté) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a1f78658a7c3422e891307f94b3fb91a2}\label{classmainWindow_a1f78658a7c3422e891307f94b3fb91a2}} 
+\hyperlink{classDataManager}{Data\+Manager} $\ast$ \hyperlink{classmainWindow_a1f78658a7c3422e891307f94b3fb91a2}{data\+Manager}
+\begin{DoxyCompactList}\small\item\em Manager de donnés pour les donnés de configuration (version de l\textquotesingle{}updateur, du modpack ...) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_ad4ea46f5179a7059dd640d6e16b8d130}\label{classmainWindow_ad4ea46f5179a7059dd640d6e16b8d130}} 
+bool \hyperlink{classmainWindow_ad4ea46f5179a7059dd640d6e16b8d130}{Dont\+Promp\+Update\+Errors}
+\begin{DoxyCompactList}\small\item\em Marquer les erreurs ou pas ? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a586234d31340f9a0dbf0b6ba8b090325}\label{classmainWindow_a586234d31340f9a0dbf0b6ba8b090325}} 
+Q\+String \hyperlink{classmainWindow_a586234d31340f9a0dbf0b6ba8b090325}{et\+Path}
+\begin{DoxyCompactList}\small\item\em Path vers le dossier général du modpack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_aad569ebc4a020a221a941751f9acc95f}\label{classmainWindow_aad569ebc4a020a221a941751f9acc95f}} 
+Q\+String \hyperlink{classmainWindow_aad569ebc4a020a221a941751f9acc95f}{et\+Version}
+\begin{DoxyCompactList}\small\item\em Version du modpack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_ad8b61699b387e89a54c46cc2159c4346}\label{classmainWindow_ad8b61699b387e89a54c46cc2159c4346}} 
+\hyperlink{classkProcess}{k\+Process} $\ast$ \hyperlink{classmainWindow_ad8b61699b387e89a54c46cc2159c4346}{extrn}
+\begin{DoxyCompactList}\small\item\em Processus de téléchargement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a22d779eb0b5a74e95f179e6bb4585114}\label{classmainWindow_a22d779eb0b5a74e95f179e6bb4585114}} 
+Q\+Label $\ast$ \hyperlink{classmainWindow_a22d779eb0b5a74e95f179e6bb4585114}{l\+\_\+\+Credits} = new Q\+Label(\char`\"{}Updater by kilian3008\char`\"{})
+\begin{DoxyCompactList}\small\item\em Credits. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_af5b764a80941f571b361459be4e25ad6}\label{classmainWindow_af5b764a80941f571b361459be4e25ad6}} 
+Q\+Label $\ast$ \hyperlink{classmainWindow_af5b764a80941f571b361459be4e25ad6}{l\+\_\+et\+Version} = new Q\+Label(\char`\"{}E\+R\+R\+OR\char`\"{})
+\begin{DoxyCompactList}\small\item\em Version d\textquotesingle{}Ether\+One (rempli plus tard) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_afccd91e503dac34c0bfd1e18a7876125}\label{classmainWindow_afccd91e503dac34c0bfd1e18a7876125}} 
+Q\+Label $\ast$ \hyperlink{classmainWindow_afccd91e503dac34c0bfd1e18a7876125}{l\+\_\+img} = new Q\+Label()
+\begin{DoxyCompactList}\small\item\em Label qui permet d\textquotesingle{}afficher le Pixmap qui contien une image (image de fond) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a1ac73cd332002dbf7057e9f39f123bfa}\label{classmainWindow_a1ac73cd332002dbf7057e9f39f123bfa}} 
+Q\+Label $\ast$ \hyperlink{classmainWindow_a1ac73cd332002dbf7057e9f39f123bfa}{l\+\_\+\+Mc\+Version} = new Q\+Label(\char`\"{}Ether\+One Version\char`\"{})
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Ether\+One Version\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a3dcd7d9704d0284fd91442e4cc1ec721}\label{classmainWindow_a3dcd7d9704d0284fd91442e4cc1ec721}} 
+Q\+Grid\+Layout $\ast$ \hyperlink{classmainWindow_a3dcd7d9704d0284fd91442e4cc1ec721}{layout} = new Q\+Grid\+Layout()
+\begin{DoxyCompactList}\small\item\em Layout principale. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_aed7a3201ec1a3481d2f4d6446fd02569}\label{classmainWindow_aed7a3201ec1a3481d2f4d6446fd02569}} 
+\hyperlink{classLoger}{Loger} $\ast$ \hyperlink{classmainWindow_aed7a3201ec1a3481d2f4d6446fd02569}{log} = new \hyperlink{classLoger}{Loger}(\char`\"{}logs.\+log\char`\"{})
+\begin{DoxyCompactList}\small\item\em Future système de log. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a79abdebffdd2e316715d5d46a0cc644c}\label{classmainWindow_a79abdebffdd2e316715d5d46a0cc644c}} 
+Q\+List$<$ Q\+String $>$ \hyperlink{classmainWindow_a79abdebffdd2e316715d5d46a0cc644c}{m\+\_\+installer\+Files} = \{F\+I\+L\+E\+\_\+\+D\+A\+TA, F\+I\+L\+E\+\_\+\+V\+E\+R\+S\+I\+ON, F\+I\+L\+E\+\_\+\+U\+P\+\_\+\+V\+E\+R\+S\+I\+ON\}
+\begin{DoxyCompactList}\small\item\em Liste des fichiers requies par l\textquotesingle{}installeur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_ab13618675bf965bf7f8dd57d48f74e4c}\label{classmainWindow_ab13618675bf965bf7f8dd57d48f74e4c}} 
+Q\+List$<$ Q\+String $>$ \hyperlink{classmainWindow_ab13618675bf965bf7f8dd57d48f74e4c}{m\+\_\+installer\+Folders} = \{F\+O\+L\+D\+E\+R\+\_\+\+I\+M\+GS, F\+O\+L\+D\+E\+R\+\_\+\+U\+P\+\_\+\+D\+A\+TA, F\+O\+L\+D\+E\+R\+\_\+\+T\+E\+MP\}
+\begin{DoxyCompactList}\small\item\em Liste des dossiers requies par l\textquotesingle{}installeur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_ac968818db675e22156b4521cb9b43781}\label{classmainWindow_ac968818db675e22156b4521cb9b43781}} 
+Q\+String $\ast$ \hyperlink{classmainWindow_ac968818db675e22156b4521cb9b43781}{m\+\_\+\+Tile} = new Q\+String()
+\begin{DoxyCompactList}\small\item\em N\+ON U\+T\+I\+L\+I\+SE. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_adee4e2756aae8a5fb3761102d5d12d35}\label{classmainWindow_adee4e2756aae8a5fb3761102d5d12d35}} 
+Q\+Pixmap $\ast$ \hyperlink{classmainWindow_adee4e2756aae8a5fb3761102d5d12d35}{pm\+\_\+\+Back\+Ground} = new Q\+Pixmap(F\+O\+L\+D\+E\+R\+\_\+\+I\+M\+GS\char`\"{}/back.\+jpg\char`\"{})
+\begin{DoxyCompactList}\small\item\em Pixmap contenant l\textquotesingle{}image en elle même. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a012ed0f09b57bc925a14d6e93baa73e9}\label{classmainWindow_a012ed0f09b57bc925a14d6e93baa73e9}} 
+Q\+Shortcut $\ast$ \hyperlink{classmainWindow_a012ed0f09b57bc925a14d6e93baa73e9}{quiet\+Mode} = new Q\+Shortcut(Q\+Key\+Sequence(tr(\char`\"{}Ctrl+Q\char`\"{})), this)
+\begin{DoxyCompactList}\small\item\em Shortcut pour activer le quiet mode (Ctrl+Q) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainWindow_a0670d734754fdc067c4990ab033ab8a1}\label{classmainWindow_a0670d734754fdc067c4990ab033ab8a1}} 
+Q\+String \hyperlink{classmainWindow_a0670d734754fdc067c4990ab033ab8a1}{updater\+Version}
+\begin{DoxyCompactList}\small\item\em Version de l\textquotesingle{}updateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fenêtre principale de l\textquotesingle{}Updater. 
+
+Toutes les actions sont coordonnés depuis cette fenêtre, autant les actions de rendu que les action au niveau logiciel (installation d\textquotesingle{}une M\+AJ par exemple). 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classmainWindow_a52d5ce0b17a87a34ac1038508e3a5c45}\label{classmainWindow_a52d5ce0b17a87a34ac1038508e3a5c45}} 
+\index{main\+Window@{main\+Window}!check\+For\+Updates@{check\+For\+Updates}}
+\index{check\+For\+Updates@{check\+For\+Updates}!main\+Window@{main\+Window}}
+\subsubsection{\texorpdfstring{check\+For\+Updates}{checkForUpdates}}
+{\footnotesize\ttfamily void check\+For\+Updates (\begin{DoxyParamCaption}\item[{bool}]{is\+Updater }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Vérifi s\textquotesingle{}il y a une mise à jour et la télécharge puis l\textquotesingle{}installe si besoin. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em is\+Updater} & Si true, on vérifira qu\textquotesingle{}il n\textquotesingle{}y a pas de mise à jour de l\textquotesingle{}updater sinon on vérifi qu\textquotesingle{}il n\textquotesingle{}y a pas de mise à jour du modpack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmainWindow_ae7ec250c3c2ec4dbc0aeae77eb546e1b}\label{classmainWindow_ae7ec250c3c2ec4dbc0aeae77eb546e1b}} 
+\index{main\+Window@{main\+Window}!check\+Updater\+Files@{check\+Updater\+Files}}
+\index{check\+Updater\+Files@{check\+Updater\+Files}!main\+Window@{main\+Window}}
+\subsubsection{\texorpdfstring{check\+Updater\+Files}{checkUpdaterFiles}}
+{\footnotesize\ttfamily bool check\+Updater\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Vérifie que tous les fichiers ET D\+O\+S\+S\+I\+E\+RS requis par l\textquotesingle{}updateur sont présent. 
+
+\begin{DoxyReturn}{Renvoie}
+true s\textquotesingle{}ils sont tous la sinon false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmainWindow_a9f87acf49e48db90c3c8117bb99682b3}\label{classmainWindow_a9f87acf49e48db90c3c8117bb99682b3}} 
+\index{main\+Window@{main\+Window}!download\+File@{download\+File}}
+\index{download\+File@{download\+File}!main\+Window@{main\+Window}}
+\subsubsection{\texorpdfstring{download\+File}{downloadFile}}
+{\footnotesize\ttfamily void download\+File (\begin{DoxyParamCaption}\item[{Q\+String}]{file,  }\item[{Q\+String}]{new\+File,  }\item[{bool}]{use\+F\+TP = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Téléchargement d\textquotesingle{}un fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em file} & Fichier à télécharger (lien http) \\
+\hline
+{\em new\+File} & Nom du fichier téléchargé \\
+\hline
+{\em use\+F\+TP} & Utilisatio ou non du protocol F\+TP (non-\/implémenté) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmainWindow_abb015d99703b6a2624fc2d543a10552d}\label{classmainWindow_abb015d99703b6a2624fc2d543a10552d}} 
+\index{main\+Window@{main\+Window}!installation\+Parser@{installation\+Parser}}
+\index{installation\+Parser@{installation\+Parser}!main\+Window@{main\+Window}}
+\subsubsection{\texorpdfstring{installation\+Parser}{installationParser}}
+{\footnotesize\ttfamily bool installation\+Parser (\begin{DoxyParamCaption}\item[{Q\+String}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Parseur du fichier d\textquotesingle{}instruction d\textquotesingle{}installation (et interpréteur) 
+
+\begin{DoxyReturn}{Renvoie}
+true si tout c\textquotesingle{}est bien passé sinon false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmainWindow_a0f3534bb135c2bc4e3c1ff351a004fb6}\label{classmainWindow_a0f3534bb135c2bc4e3c1ff351a004fb6}} 
+\index{main\+Window@{main\+Window}!install\+Up\+Update@{install\+Up\+Update}}
+\index{install\+Up\+Update@{install\+Up\+Update}!main\+Window@{main\+Window}}
+\subsubsection{\texorpdfstring{install\+Up\+Update}{installUpUpdate}}
+{\footnotesize\ttfamily void install\+Up\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Installe une mise à jour de l\textquotesingle{}updater (appelé par check\+For\+Updates) 
+
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{classmainWindow_a52d5ce0b17a87a34ac1038508e3a5c45}{check\+For\+Updates(bool)} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classmainWindow_a5eed4f5e05f3553c3318d8ce8a3dd94d}\label{classmainWindow_a5eed4f5e05f3553c3318d8ce8a3dd94d}} 
+\index{main\+Window@{main\+Window}!parse\+String@{parse\+String}}
+\index{parse\+String@{parse\+String}!main\+Window@{main\+Window}}
+\subsubsection{\texorpdfstring{parse\+String}{parseString}}
+{\footnotesize\ttfamily Q\+String\+List parse\+String (\begin{DoxyParamCaption}\item[{Q\+String}]{to\+Parse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+fonction interne requise au fonctionnement du installation\+Parser 
+
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{classmainWindow_abb015d99703b6a2624fc2d543a10552d}{installation\+Parser(\+Q\+String)} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Renvoie}
+/// 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmainWindow_a47f43ddb89ca56a42446630e9b7e1153}\label{classmainWindow_a47f43ddb89ca56a42446630e9b7e1153}} 
+\index{main\+Window@{main\+Window}!version\+Parser@{version\+Parser}}
+\index{version\+Parser@{version\+Parser}!main\+Window@{main\+Window}}
+\subsubsection{\texorpdfstring{version\+Parser}{versionParser}}
+{\footnotesize\ttfamily void version\+Parser (\begin{DoxyParamCaption}\item[{bool}]{is\+Updater }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Parse le fichier de versions obtenu du téléchargement. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em is\+Updater} & Si true, le fichier est celui de mise à jour de l\textquotesingle{}updater sinon c\textquotesingle{}est celui de mise à jour du modpack \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+C++/\+Qt/\+Ether\+One\+Updater/\hyperlink{mainwindow_8h}{mainwindow.\+h}\item 
+E\+:/\+C++/\+Qt/\+Ether\+One\+Updater/\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}\end{DoxyCompactItemize}
